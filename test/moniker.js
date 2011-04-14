@@ -3,7 +3,8 @@ var Assert = require('assert'),
 
 module.exports = {
   'names are random': function() {
-    var names = M.generator([M.adjective, M.noun], { size: 7 });
+    var names = M.generator([M.adjective, M.noun], { maxSize: 7 });
+    Assert.equal(typeof names.choose(), 'string');
     Assert.notEqual(names.choose(), names.choose());
   }
 };
