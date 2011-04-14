@@ -11,7 +11,6 @@ using dictionaries. Moniker has built-in `noun`, `verb`, and
     var Moniker = require('moniker');
     var names = Moniker.generator([Moniker.adjective, Moniker.noun]);
     console.log(names.choose());
-
     // Example output: murky-hands
 
 ## Installation ##
