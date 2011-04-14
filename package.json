@@ -1,0 +1,7 @@
+{
+  "name": "moniker",
+  "version": "0.1.0",
+  "description": "Generate random names.",
+  "author": "Ben Weaver <ben@orangesoda.net>",
+  "main": "./lib/moniker"
+}
