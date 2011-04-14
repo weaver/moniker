@@ -22,9 +22,11 @@ Install Moniker using NPM:
 
 ## API ##
 
-**generate(dictionaries, options)**
+### Generators ###
 
-Create a new name generator. When a new name is generated, a word is
+**generator(dictionaries, options)**
+
+Create a new `Generator`. When a new name is generated, a word is
 chosen from each item in `dictionaries` in order.
 
 Each dictionary may be a `Dictionary` instance, a string path to a
@@ -42,7 +44,7 @@ The `options` are optional and are passed along to the new
 
 **Generator(options)**
 
-Create a new generator. Be sure to `.use()` some dictionaries
+A name generator. Be sure to `.use()` some dictionaries
 afterward. Options may include:
 
     {
@@ -62,6 +64,8 @@ along to each newly-constructed `Dictionary`.
 **generator.choose()**
 
 Create a new name.
+
+### Dictionaries ###
 
 **adjective(options)**
 
