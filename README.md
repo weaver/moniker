@@ -4,14 +4,19 @@ A random name generator for Node.js.
 
 ## Synopsis ##
 
-To use Moniker, create a generator. Generators create random names
+Moniker provides a default adjective/noun generator. Use it like this:
+
+    var Moniker = require('moniker');
+    console.log(Moniker.choose());
+    // Example output: murky-hands
+
+You can also make a custom generator. Generators create random names
 using dictionaries. Moniker has built-in `noun`, `verb`, and
-`adjective` dictionaries, or you can create your own.
+`adjective` dictionaries, or you can add your own.
 
     var Moniker = require('moniker');
     var names = Moniker.generator([Moniker.adjective, Moniker.noun]);
     console.log(names.choose());
-    // Example output: murky-hands
 
 ## Installation ##
 
