@@ -3,5 +3,12 @@
   "version": "0.1.2",
   "description": "Generate random names.",
   "author": "Ben Weaver <ben@orangesoda.net>",
-  "main": "./lib/moniker"
+  "main": "./lib/moniker",
+  "scripts": {
+    "test": "mocha && eslint lib/ test/"
+  },
+  "devDependencies": {
+    "eslint": "^1.1.0",
+    "mocha": "^2.2.5"
+  }
 }

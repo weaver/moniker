@@ -1,14 +1,18 @@
 var Assert = require('assert'),
     M = require('../lib/moniker');
 
-module.exports = {
-  'the default generator works': function() {
-    Assert.equal(typeof M.choose(), 'string');
-  },
-
-  'names are random': function() {
-    var names = M.generator([M.adjective, M.noun], { maxSize: 7 });
-    Assert.equal(typeof names.choose(), 'string');
-    Assert.notEqual(names.choose(), names.choose());
-  }
-};
+describe('all', function() {
+  it('the default generator works', function() {
+      var G = M.generator([M.adjective, M.noun], { maxSize: 7, capitalize: true });
+      console.log(G);
+      var name = G.choose();
+      console.log(name);
+      Assert.equal(typeof name, 'string');
+    });
+  it('names are random', function() {
+      var names = M.generator([M.adjective, M.noun], { maxSize: 7 });
+      console.log(names);
+      Assert.equal(typeof names.choose(), 'string');
+      Assert.notEqual(names.choose(), names.choose());
+    });
+});

@@ -52,7 +52,8 @@ A name generator. Be sure to `.use()` some dictionaries
 afterward. Options may include:
 
     {
-      glue: '-'
+      capitalize: true,
+      noglue: true,
     }
 
 **generator.use(dictionary, options)**
