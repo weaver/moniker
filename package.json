@@ -3,5 +3,9 @@
   "version": "0.1.2",
   "description": "Generate random names.",
   "author": "Ben Weaver <ben@orangesoda.net>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/weaver/moniker.git"
+  },
   "main": "./lib/moniker"
 }
